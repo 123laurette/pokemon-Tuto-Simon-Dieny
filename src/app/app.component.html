@@ -1,0 +1,56 @@
+<nav>
+    <div class="nav-wrapper teal">
+        <a href="#" class="brand-logo center">
+            Pokédex
+        </a>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+
+
+
+<!--CODE CI DESSOUS fait uniquement pour afficher les noms des pokémons et permettre d'en trouver un ou d'afficher un message si le pokemon demandé n'existe pas-->
+
+<!--<input
+    #input
+    (keyup.enter)="selectPokemon(input.value)"
+    type="number"
+/> 
+PSEUDO EVENEMENT ANGULAR : Keyup.enter
+
+
+<p *ngIf="pokemonSelected">
+    Vous avez sélectionné le pokemon : {{ pokemonSelected.name }}
+</p>
+<p *ngIf="!pokemonSelected">
+    Aucun pokémon n'a été trouvé.
+</p>-->
+<!-- *ngIf permet de faire apparaitre element ou pas, suivant conditions-->
+
+
+<!--DEUX METHODES POUR DEMANDER AFFICHAGE DE TOUS LES ELEMENTS D'UN TABLEAU-->
+<!-- 1ER METHODE
+<p>{{ pokemonList [0].name }}</p>
+<p>{{ pokemonList [1].name}}</p>
+<p>{{ pokemonList [2].name }}</p>
+<p>{{ pokemonList [3].name }}</p>
+<p>{{ pokemonList [4].name }}</p>
+<p>{{ pokemonList [5].name }}</p>
+<p>{{ pokemonList [6].name }}</p>
+<p>{{ pokemonList [7].name }}</p>
+<p>{{ pokemonList [8].name }}</p>
+<p>{{ pokemonList [9].name }}</p>
+<p>{{ pokemonList [10].name }}</p>
+<p>{{ pokemonList [11].name }}</p>-->
+
+<!-- 2EME METHODE-->
+<!--<p *ngFor="let pokemon of pokemonList">
+    {{ pokemon.picture }}
+</p>-->
+<!-- *ngFor permet d'afficher tous les éléments d'un tableau sans faire plusieurs lignes dans le code-->
+
+
+
